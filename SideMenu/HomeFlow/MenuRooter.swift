@@ -12,7 +12,7 @@ protocol RootViewControllerDelegate: AnyObject {
     func rootViewControllerDidTapMenuButton(_ rootViewController: MenuRooter)
 }
 
-class MenuRooter: UINavigationController, UINavigationControllerDelegate {
+final class MenuRooter: UINavigationController, UINavigationControllerDelegate {
     fileprivate var menuButton: UIBarButtonItem!
     fileprivate var topNavigationLeftImage: UIImage?
     weak var drawerDelegate: RootViewControllerDelegate?

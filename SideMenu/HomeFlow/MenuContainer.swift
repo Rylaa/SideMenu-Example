@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuContainer: UIViewController, RootViewControllerDelegate {
+final class MenuContainer: UIViewController, RootViewControllerDelegate {
     var rootViewController: MenuRooter
     var menuController: SideMenuVC
     var isMenuExpanded: Bool = false
